@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-width: 1px;
+  display: block;
+  flex-direction: column;
+  width: 100%; /* 기본 너비를 100%로 설정 */
+  max-width: 500px;
+  min-height: 100vh;
+  min-width: 280px;
+  position: relative;
+  margin: 0 auto;
+  font-family: "omyu_pretty";
+  background: #ffffff;
+  padding-bottom: 500px;
+}
+
+:root {
+  --vh: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+}

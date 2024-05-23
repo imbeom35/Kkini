@@ -1,0 +1,27 @@
+spring:
+  profiles:
+    active:
+      - local
+    group:
+      local:
+        - db-local
+        - log-local
+        - oauth2-local
+        - value-local
+      dev:
+        - db-dev
+        - log-dev
+        - oauth2-dev
+        - value-dev
+    include:
+      - db
+      - jwt
+      - log
+      - server
+      - swagger
+      - s3
+      - oauth2
+      - value
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher

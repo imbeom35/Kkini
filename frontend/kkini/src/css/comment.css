@@ -1,0 +1,73 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* CommentsContainer */
+.CommentsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.CommentsList {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  overflow-y: auto;
+  /* scrollbar-width: none; */
+}
+
+/* Comment */
+.Comment {
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* CommentContent */
+.CommentContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.CommentContent * {
+  text-align: left;
+}
+
+/* CommentForm */
+.CommentForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  /* border: solid 2px lightgray; */
+}
+
+/* CommentInput */
+.CommentInput {
+  color: black !important;
+}
+
+/* CommentButton */
+.CommentButton {
+  padding: 5px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* #007bff */
+
+.CommentButton:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+
+/* .Comment::-webkit-scrollbar {
+  display: none;
+} */

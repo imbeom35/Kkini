@@ -1,0 +1,251 @@
+.logo {
+  margin-top: 100px;
+  width: 250px;
+  height: 250px;
+}
+/**
+ * spin3D
+ * - Spins in 3D
+ */
+@keyframes spin3D {
+  15% {
+    transform: rotateY(180deg) scale(2);
+  }
+
+  30% {
+    transform: rotateX(360deg) rotateY(180deg) skewX(50deg) scale(2);
+  }
+
+  45% {
+    transform: rotateX(480deg) rotateY(360deg) skewX(-50deg) skewY(0deg) scale(1.5);
+  }
+
+  60% {
+    transform: rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) scale(2);
+  }
+
+  70% {
+    transform: rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) scale(3);
+  }
+
+  80% {
+    transform: rotateX(0deg) rotateY(540deg) skewX(0deg) skewY(0deg) scale(3);
+  }
+
+  90% {
+    transform: rotateX(180deg) rotateY(1080deg) skewX(0deg) skewY(0deg) scale(0.3);
+  }
+
+  97% {
+    transform: rotateX(40deg) rotateY(80deg) skewX(0deg) skewY(0deg) scale(2);
+  }
+}
+
+.spin3D {
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+  animation-name: spin3D;
+  animation-duration: 5s;
+}
+
+/**
+* Pulse
+* - Increases and decreases in size
+*/
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+  animation-name: pulse;
+  animation-duration: 0.75s;
+  animation-iteration-count: 3;
+}
+
+/**
+* blazingStar
+* - Radiate shiny things
+*/
+@keyframes blazingStar {
+  1% {
+    border-radius: none;
+    box-shadow: 0px 0px 40px rgba(255, 255, 0, 0.6);
+    transform: scale(1);
+  }
+  10% {
+    box-shadow: 0px 0px 0px;
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  20% {
+    box-shadow: 0px 0px 120px rgba(255, 255, 0, 0.6);
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  30% {
+    box-shadow: 0px 0px 0px;
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  40% {
+    box-shadow: 0px 0px 120px rgba(255, 255, 0, 0.6);
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0px 0px 0px;
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  60% {
+    box-shadow: 0px 0px 20vh rgba(255, 255, 0, 1);
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+
+  70% {
+    box-shadow: 0px 0px 0px;
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  80% {
+    box-shadow: 0px 0px 20vh rgba(255, 255, 0, 1);
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+
+  90% {
+    box-shadow: 0px 0px 0px;
+    /*border-radius: 50%;*/
+    transform: scale(1);
+  }
+  99% {
+    box-shadow: 0px 0px 20vh rgba(255, 255, 0, 1);
+    /*border-radius: 50%;*/
+    transform: scale(1.1);
+  }
+}
+
+.blazingStar {
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  animation-name: blazingStar;
+  animation-duration: 5s;
+}
+
+/**
+* rotateComplex
+* - Comes in style, this isn't your oridinary entrance
+*/
+@keyframes rotateComplex {
+  1% {
+    opacity: 90%;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate3d(200px, -140px, 0) rotate(1080deg);
+  }
+  20% {
+    transform: translate3d(-200px, 140px, 0) rotate(-160deg);
+  }
+  30% {
+    transform: translate3d(-200px, -140px, 0) rotate(340deg);
+  }
+  40% {
+    transform: translate3d(-200px, 140px, 0) rotate(-720deg);
+  }
+  50% {
+    transform: translate3d(200px, 140px, 0) rotate(120deg) scale(1.2);
+  }
+  60% {
+    transform: translate3d(0px, 0px, 100px) rotate(1080deg) scale(1.5);
+  }
+  65% {
+    transform: translate3d(0px, 0px, 200px) rotate(-1080deg) scale(2);
+  }
+  90% {
+    transform: translate3d(0px, 0px, 600px) rotate(6080deg) scale(5);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+.rotateComplex {
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+  animation-name: rotateComplex;
+  animation-duration: 5s;
+}
+
+/**
+* starWars
+* - Starwars sequence
+*/
+@keyframes starWars {
+  0% {
+    transform: translate3d(0, 315px, 0) rotateX(-60deg) scale(2);
+  }
+  5% {
+    transform: translate3d(0, -800px, 0) rotateX(60deg) scale(0.19);
+  }
+  10% {
+    transform: translate3d(0, -500px, 0) rotateX(60deg) scale(0.19);
+  }
+  15% {
+    transform: translate3d(0, -500px, 0) rotateX(60deg) scale(0.19);
+  }
+  100% {
+    display: none;
+  }
+}
+
+.starWars {
+  animation-timing-function: ease-out;
+  transform-origin: bottom center;
+  animation-name: starWars;
+  animation-duration: 10s;
+}
+
+/* 스탬프 */
+.stamp {
+  background-image: url("/public/img/logo.png");
+  position: relative;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+    transform-origin: 50% 50%;
+    transform: rotate(-2deg) scale(5);
+    transition: all 0.3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-15deg) scale(1);
+  }
+}

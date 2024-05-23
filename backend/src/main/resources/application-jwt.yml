@@ -1,0 +1,3 @@
+jwt:
+  secret: ${JWT_SECRET_KEY}    # JWT를 Encoding / Decoding하기 위한 Private Key
+  valid-seconds: 3600    # Access Token 만료시간 (초)

@@ -1,0 +1,22 @@
+.drawer-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 60%;
+  transition: bottom 0.3s;
+  background-color: white;
+  z-index: 2;
+  opacity: 1;
+  -ms-overflow-style: none;
+  border: 1px solid;
+  border-color: black;
+  box-sizing: border-box;
+}
+
+.drawer-close {
+  background-color: black;
+  color: white;
+}

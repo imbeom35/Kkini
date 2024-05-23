@@ -1,0 +1,24 @@
+# 공통 설정
+page-size:
+  post:
+    algorithm: 20
+
+--- # local 설정
+spring:
+  config:
+    activate:
+      on-profile: "value-local"
+
+url:
+  frontend: http://localhost:3000
+  backend: http://localhost:8080
+
+--- # dev 설정
+spring:
+  config:
+    activate:
+      on-profile: "value-dev"
+
+url:
+  frontend: https://i9c210.p.ssafy.io
+  backend: https://i9c210.p.ssafy.io/api
